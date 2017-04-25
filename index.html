@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reproductor de música</title>
+</head>
+<body>
+<audio id="Canción1" src="audio/TemptingTime.mp3" controls="controls" type="audio/mp3" preload="preload"></audio>
+
+<div>
+  <button onclick="document.getElementById('Canción1').play()">Reproducir el Audio</button>
+  <button onclick="document.getElementById('Canción1').pause()">Pausar el Audio</button>
+  <button onclick="document.getElementById('Canción1').volume+=0.1">Aumentar el Volumen</button>
+  <button onclick="document.getElementById('Canción1').volume-=0.1">Disminuir el Volumen</button>
+  <button onclick="document.getElementById('Canción1').currentTime-=5">Retroceder</button>
+  <button onclick="document.getElementById('Canción1').currentTime+=20">Avanzar</button>
+</div>
+
+</body>
+</html>
